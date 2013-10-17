@@ -1,0 +1,100 @@
+//////////////////////////////
+// Set legacy support
+//
+// If you need support for IE6 or IE7, you should install the Box Sizing polyfill.
+// In your project's folder from the command line, type the following:
+// compass install singularitygs/box-sizing
+//////////////////////////////
+$legacy-support-for-ie6:     false;
+$legacy-support-for-ie7:     false;
+$legacy-support-for-mozilla: false;
+
+//////////////////////////////
+// Import Base
+//////////////////////////////
+@import "partials/base";
+
+$grids: 8;
+// $grids: add-grid(6 at 30em);
+// $grids: add-grid(9 at 40em);
+// $grids: add-grid(12 at 50em);
+//$output: 'float';
+
+
+html {
+}
+
+html, 
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+#page {
+	margin: 0 auto;
+	min-height: 100%;
+	max-width: 1200px;
+	padding: 20px 0;
+
+	//@include background-grid;
+	@include cf;
+}
+
+
+
+// Layout
+#content {
+	@include grid-span(5, 1);
+}
+
+.region-sidebar-first {
+	@include grid-span(1, 6);
+}
+
+.region-sidebar-second {
+	@include grid-span(2, 7);
+}
+
+footer {
+	clear: both;
+}
+
+
+
+.column-first {
+	@include grid-span(4, 1);
+
+	background: orange;
+}
+
+.column-last {
+	@include grid-span(4, 5);
+
+	background: blue;
+}
+
+
+
+
+
+// Test list
+ul.testlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		background: red;
+		margin: 0 gutter-span() 20px 0;
+		overflow: hidden;
+		padding: 0;
+
+    @include float-span(2);
+
+		&:nth-child(4n+4) {  
+			margin-right: 0;
+		}
+	}
+}
+
