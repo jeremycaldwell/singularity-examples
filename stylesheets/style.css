@@ -1,117 +1,121 @@
-/* line 40, ../sass/partials/_base.scss */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px;
+/* line 25, ../sass/partials/_base.scss */
+ul.testlist {
+  margin: 0;
+  padding: 0;
 }
-/* line 47, ../sass/partials/_base.scss */
-.ir:before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 0;
+/* line 29, ../sass/partials/_base.scss */
+ul.testlist li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 32, ../sass/style.scss */
 html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100%;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 #page {
   margin: 0 auto;
-  min-height: 100%;
   max-width: 1200px;
   padding: 20px 0;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(210, 105, 30, 0.5)), color-stop(10.25641%, rgba(210, 105, 30, 0.5)), color-stop(10.25641%, rgba(210, 105, 30, 0.25)), color-stop(12.82051%, rgba(210, 105, 30, 0.25)), color-stop(12.82051%, rgba(210, 105, 30, 0.5)), color-stop(23.07692%, rgba(210, 105, 30, 0.5)), color-stop(23.07692%, rgba(210, 105, 30, 0.25)), color-stop(25.64103%, rgba(210, 105, 30, 0.25)), color-stop(25.64103%, rgba(210, 105, 30, 0.5)), color-stop(35.89744%, rgba(210, 105, 30, 0.5)), color-stop(35.89744%, rgba(210, 105, 30, 0.25)), color-stop(38.46154%, rgba(210, 105, 30, 0.25)), color-stop(38.46154%, rgba(210, 105, 30, 0.5)), color-stop(48.71795%, rgba(210, 105, 30, 0.5)), color-stop(48.71795%, rgba(210, 105, 30, 0.25)), color-stop(51.28205%, rgba(210, 105, 30, 0.25)), color-stop(51.28205%, rgba(210, 105, 30, 0.5)), color-stop(61.53846%, rgba(210, 105, 30, 0.5)), color-stop(61.53846%, rgba(210, 105, 30, 0.25)), color-stop(64.10256%, rgba(210, 105, 30, 0.25)), color-stop(64.10256%, rgba(210, 105, 30, 0.5)), color-stop(74.35897%, rgba(210, 105, 30, 0.5)), color-stop(74.35897%, rgba(210, 105, 30, 0.25)), color-stop(76.92308%, rgba(210, 105, 30, 0.25)), color-stop(76.92308%, rgba(210, 105, 30, 0.5)), color-stop(87.17949%, rgba(210, 105, 30, 0.5)), color-stop(87.17949%, rgba(210, 105, 30, 0.25)), color-stop(89.74359%, rgba(210, 105, 30, 0.25)), color-stop(89.74359%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)));
+  background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 10.25641%, rgba(210, 105, 30, 0.25) 10.25641%, rgba(210, 105, 30, 0.25) 12.82051%, rgba(210, 105, 30, 0.5) 12.82051%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.25) 25.64103%, rgba(210, 105, 30, 0.5) 25.64103%, rgba(210, 105, 30, 0.5) 35.89744%, rgba(210, 105, 30, 0.25) 35.89744%, rgba(210, 105, 30, 0.25) 38.46154%, rgba(210, 105, 30, 0.5) 38.46154%, rgba(210, 105, 30, 0.5) 48.71795%, rgba(210, 105, 30, 0.25) 48.71795%, rgba(210, 105, 30, 0.25) 51.28205%, rgba(210, 105, 30, 0.5) 51.28205%, rgba(210, 105, 30, 0.5) 61.53846%, rgba(210, 105, 30, 0.25) 61.53846%, rgba(210, 105, 30, 0.25) 64.10256%, rgba(210, 105, 30, 0.5) 64.10256%, rgba(210, 105, 30, 0.5) 74.35897%, rgba(210, 105, 30, 0.25) 74.35897%, rgba(210, 105, 30, 0.25) 76.92308%, rgba(210, 105, 30, 0.5) 76.92308%, rgba(210, 105, 30, 0.5) 87.17949%, rgba(210, 105, 30, 0.25) 87.17949%, rgba(210, 105, 30, 0.25) 89.74359%, rgba(210, 105, 30, 0.5) 89.74359%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 10.25641%, rgba(210, 105, 30, 0.25) 10.25641%, rgba(210, 105, 30, 0.25) 12.82051%, rgba(210, 105, 30, 0.5) 12.82051%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.25) 25.64103%, rgba(210, 105, 30, 0.5) 25.64103%, rgba(210, 105, 30, 0.5) 35.89744%, rgba(210, 105, 30, 0.25) 35.89744%, rgba(210, 105, 30, 0.25) 38.46154%, rgba(210, 105, 30, 0.5) 38.46154%, rgba(210, 105, 30, 0.5) 48.71795%, rgba(210, 105, 30, 0.25) 48.71795%, rgba(210, 105, 30, 0.25) 51.28205%, rgba(210, 105, 30, 0.5) 51.28205%, rgba(210, 105, 30, 0.5) 61.53846%, rgba(210, 105, 30, 0.25) 61.53846%, rgba(210, 105, 30, 0.25) 64.10256%, rgba(210, 105, 30, 0.5) 64.10256%, rgba(210, 105, 30, 0.5) 74.35897%, rgba(210, 105, 30, 0.25) 74.35897%, rgba(210, 105, 30, 0.25) 76.92308%, rgba(210, 105, 30, 0.5) 76.92308%, rgba(210, 105, 30, 0.5) 87.17949%, rgba(210, 105, 30, 0.25) 87.17949%, rgba(210, 105, 30, 0.25) 89.74359%, rgba(210, 105, 30, 0.5) 89.74359%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 10.25641%, rgba(210, 105, 30, 0.25) 10.25641%, rgba(210, 105, 30, 0.25) 12.82051%, rgba(210, 105, 30, 0.5) 12.82051%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.25) 25.64103%, rgba(210, 105, 30, 0.5) 25.64103%, rgba(210, 105, 30, 0.5) 35.89744%, rgba(210, 105, 30, 0.25) 35.89744%, rgba(210, 105, 30, 0.25) 38.46154%, rgba(210, 105, 30, 0.5) 38.46154%, rgba(210, 105, 30, 0.5) 48.71795%, rgba(210, 105, 30, 0.25) 48.71795%, rgba(210, 105, 30, 0.25) 51.28205%, rgba(210, 105, 30, 0.5) 51.28205%, rgba(210, 105, 30, 0.5) 61.53846%, rgba(210, 105, 30, 0.25) 61.53846%, rgba(210, 105, 30, 0.25) 64.10256%, rgba(210, 105, 30, 0.5) 64.10256%, rgba(210, 105, 30, 0.5) 74.35897%, rgba(210, 105, 30, 0.25) 74.35897%, rgba(210, 105, 30, 0.25) 76.92308%, rgba(210, 105, 30, 0.5) 76.92308%, rgba(210, 105, 30, 0.5) 87.17949%, rgba(210, 105, 30, 0.25) 87.17949%, rgba(210, 105, 30, 0.25) 89.74359%, rgba(210, 105, 30, 0.5) 89.74359%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 10.25641%, rgba(210, 105, 30, 0.25) 10.25641%, rgba(210, 105, 30, 0.25) 12.82051%, rgba(210, 105, 30, 0.5) 12.82051%, rgba(210, 105, 30, 0.5) 23.07692%, rgba(210, 105, 30, 0.25) 23.07692%, rgba(210, 105, 30, 0.25) 25.64103%, rgba(210, 105, 30, 0.5) 25.64103%, rgba(210, 105, 30, 0.5) 35.89744%, rgba(210, 105, 30, 0.25) 35.89744%, rgba(210, 105, 30, 0.25) 38.46154%, rgba(210, 105, 30, 0.5) 38.46154%, rgba(210, 105, 30, 0.5) 48.71795%, rgba(210, 105, 30, 0.25) 48.71795%, rgba(210, 105, 30, 0.25) 51.28205%, rgba(210, 105, 30, 0.5) 51.28205%, rgba(210, 105, 30, 0.5) 61.53846%, rgba(210, 105, 30, 0.25) 61.53846%, rgba(210, 105, 30, 0.25) 64.10256%, rgba(210, 105, 30, 0.5) 64.10256%, rgba(210, 105, 30, 0.5) 74.35897%, rgba(210, 105, 30, 0.25) 74.35897%, rgba(210, 105, 30, 0.25) 76.92308%, rgba(210, 105, 30, 0.5) 76.92308%, rgba(210, 105, 30, 0.5) 87.17949%, rgba(210, 105, 30, 0.25) 87.17949%, rgba(210, 105, 30, 0.25) 89.74359%, rgba(210, 105, 30, 0.5) 89.74359%, rgba(210, 105, 30, 0.5) 100%);
 }
-/* line 27, ../sass/partials/_base.scss */
+/* line 40, ../sass/partials/_base.scss */
 #page:before, #page:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-/* line 32, ../sass/partials/_base.scss */
+/* line 45, ../sass/partials/_base.scss */
 #page:after {
   clear: both;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 #content {
   width: 61.53846%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
+  background: green;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .region-sidebar-first {
   width: 10.25641%;
   float: left;
   margin-right: -100%;
   margin-left: 64.10256%;
   clear: none;
+  background: green;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .region-sidebar-second {
   width: 23.07692%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
+  background: green;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 footer {
   clear: both;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .column-first {
-  width: 48.71795%;
+  width: 58.33333%;
   float: left;
   margin-right: -100%;
   margin-left: 0%;
   clear: none;
-  background: orange;
+  background: yellow;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .column-last {
-  width: 48.71795%;
+  width: 37.5%;
   float: right;
   margin-left: 0;
   margin-right: 0;
   clear: none;
-  background: blue;
+  background: yellow;
 }
 
-/* line 82, ../sass/style.scss */
-ul.testlist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 87, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 ul.testlist li {
   background: red;
-  margin: 0 2.5641% 20px 0;
+  margin-bottom: 20px;
+  margin-right: 2.5641%;
   overflow: hidden;
-  padding: 0;
-  width: 23.07692%;
+  text-align: center;
+  width: 28.57143%;
   clear: right;
   float: left;
   margin-left: 0;
-  margin-right: 2.5641%;
+  margin-right: 7.14286%;
 }
-/* line 95, ../sass/style.scss */
-ul.testlist li:nth-child(4n+4) {
+/* line 99, ../sass/style.scss */
+ul.testlist li:nth-child(3n+3) {
   margin-right: 0;
 }
